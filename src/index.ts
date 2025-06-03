@@ -18,7 +18,7 @@ app.get("/", async () => {
 
 app.register(files, { prefix: "files" });
 
-app.listen({ port: 4433 }, (err, address) => {
+app.listen({ host: "0.0.0.0", port: 4433 }, (err, address) => {
   if (err) {
     console.error(err);
     process.exit(1);

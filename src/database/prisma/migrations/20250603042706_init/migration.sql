@@ -1,0 +1,10 @@
+-- CreateTable
+CREATE TABLE "Files" (
+    "id" SERIAL NOT NULL,
+    "link" TEXT NOT NULL,
+    "available" BOOLEAN NOT NULL,
+    "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updatedAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+    CONSTRAINT "Files_pkey" PRIMARY KEY ("id")
+);
